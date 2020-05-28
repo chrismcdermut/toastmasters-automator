@@ -1,5 +1,8 @@
 /* Script cobbled together to automate many of the Table Topics functions so that we all can fully participate. 
 Tracking time, picking questions, and recording speaker and duration data */
+var SCRIPT_NAME = 'Toastmaster-Automator';
+var SCRIPT_VERSION = 'V1.0';
+
 
 //Create the menu item and open it.
 function onOpen() {
