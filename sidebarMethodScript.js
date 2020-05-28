@@ -45,3 +45,24 @@ function applyConditionalFormatting() {
   rules.push(rule);
   sheetD.setConditionalFormatRules(rules);
 }
+
+///////////////Notes///////////////
+
+// <!-- <script>
+//   /* Original code to initiate script to transfer text from html */
+//   function sendName(){
+//    //Get the value of the input field
+//    var name = document.getElementById("name").value
+//    //Log the value of input field in the web browser console (usually used for debugging)
+//    console.log(name)
+//    //Send the value of the text field as an arugment to the server side function.
+//    google.script.run.enterName(name);
+//    name = undefined;
+//   }
+//
+//   /* WIP: to initate conditional formatting */
+//   function timerGreen(){
+//   google.script.run.timerGreen();
+//   }
+//
+// </script> -->
