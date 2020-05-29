@@ -2,7 +2,7 @@
 <html>
 <head>
   <base target="_top">
-  <?!= include('Stylesheet'); ?>
+  <?!= include('styles/Stylesheet'); ?>
 </head>
 
 <body>
@@ -65,14 +65,12 @@
     <p></p>
   </div>
 
-    <!-- piece of the original code to initiate script to transfer text from html to script to spreadsheet -->
-
     <!-- Create an input field to accept a value form user, in this case their name -->
     Your Name:
     <input type="text" id="name"><br>
     <!-- Create a button to send the value to the spreadsheet -->
     <button onclick='sendName()'>Send Name</button>
 
-<?!= include('sidebar-method-script'); ?>
+<?!= include('html/sidebar-method-script'); ?>
 </body>
 </html>
