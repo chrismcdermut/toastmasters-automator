@@ -6,7 +6,7 @@ module.exports = {
   entry:{
       lib:'./scripts/sidebarMethodScript.js',
       lib2:'./scripts/code.js',
-      lib3:'./appsscript.json',
+      // lib3:'./appsscript.json',
   },
   output:
   {
