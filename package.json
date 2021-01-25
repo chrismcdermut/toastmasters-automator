@@ -5,12 +5,17 @@
   "main": "sidebarMethodScript.js",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.10.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-import": "^2.20.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "scripts": {
+    "gas": "webpack --config webpack.gas.js ",
+    "deploy": "npm run gas && cd dist && clasp push",
     "pretest": "eslint --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

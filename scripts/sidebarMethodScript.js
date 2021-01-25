@@ -1,14 +1,6 @@
 /* eslint no-undef: 0 */ // --> OFF
 /* eslint no-unused-vars: 0 */ // --> OFF
 
-/* Script cobbled together to automate many of the Table Topics functions
-so that we all can fully participate. Tracking time, picking questions,
-and recording speaker and duration data */
-
-// TODO: is this useful?
-// const SCRIPT_NAME = 'Toastmaster-Automator';
-// const SCRIPT_VERSION = 'V1.0';
-
 /**
  * Create the menu item and open it.
  */
@@ -19,14 +11,11 @@ function onOpen() {
       .addToUi();
 }
 
-// TODO: title and width?
+// TODO: title and width? -> .setTitle('Table Topics Sidebar').setWidth(100);
 /**
  * Generate sidebar
  */
 function showSidebar() {
-  // var html = HtmlService.createHtmlOutputFromFile('Table_Topics_Sidebar')
-  // .setTitle('Table Topics Sidebar').setWidth(100);
-  // // .createTemplateFromFile('../html/table-topics-sidebar')
   const html = HtmlService
       .createTemplateFromFile('html/table-topics-sidebar')
       .evaluate();
@@ -79,6 +68,10 @@ function applyConditionalFormatting() {
 // * @param {number} num1 The first number.
 // * @param {number} num2 The second number.
 // * @returns {number} The sum of the two numbers.
+//
+// // TODO: is this useful?
+// const SCRIPT_NAME = 'Toastmaster-Automator';
+// const SCRIPT_VERSION = 'V1.0';
 
 // <!-- <script>
 //   /* Original code to initiate script to transfer text from html */
